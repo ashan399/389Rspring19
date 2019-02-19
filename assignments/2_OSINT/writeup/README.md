@@ -16,7 +16,7 @@ Digital acknowledgement: Ashan Panduwawala
 3. Her email is v0idcache@protonmail.com. I found it on the about tab of her website. She also has a twitter with the username: v0idcache.
 4. I went on security trails and pasted the domain of the website. The results returned with an ip address of 142.93.136.81.
 5. I added robots.txt to the end of the url and found the directory name: /secret_directory.
-6.
+6. I went to a website called pentest-tools.com and entered the ip address of the website. There are 2 open ports 22 and 80 in which 1 is running on ssh and the other is on http.
 7.
 8. On the bank website, I did inspect element and found the phrase <!-- Good find! CMSC389R-{h1dd3n_1n_plain_5ight} --> in the HTML. I also added robots.txt to the url and found a secret directory. After adding the directory to the url, I got the tag : CMSC389R-{h1ding_fil3s_in_r0bots_L0L}. I also found one using centralops.net and entering the url of her website; Under DNS records, there is a text  field saying "CMSC389R-{h0w_2_iNt0_DNS_r3c0Rd5}"
 
