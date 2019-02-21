@@ -8,7 +8,8 @@
 4. I went on security trails and pasted the domain of the website. The results returned with an ip address of 142.93.136.81. With this ip, I went to iplocation.net and found that the ip was located in Amsterdam City, Netherlands. I also looked at the DNS history of the website using securityTrails and found an ip address of 162.255.119.56 from the organization Namecheap Inc.. 
 5. I added robots.txt to the end of the url and found the directory name: /secret_directory. After adding the directory to the url, I got the tag : CMSC389R-{h1ding_fil3s_in_r0bots_L0L}. After logging into the server I changed to the home directory and found the file flag.txt. I used 'cat flag.txt' and got this flag CMSC389R-{brut3_f0rce_m4ster}. 
 6. On kali, I ran nmap on the ip address and scanned all 60000+ ports. I got 3 ports 22, 80, 1337. Port 22 is running on ssh, port 80 is running on http, and port 1337 is running on waste.
-7. Taking the ip address that I found, I entered it into mxtoolbox.com and found that the server was running on Werkzeug/0.14.1 Python/3.7.2. 
+7. Taking the ip address that I found, I entered it into shodan.io and found the ssh client was running on Ubuntu. More specifically,
+SSH-2.0-OpenSSH_7.6p1 Ubuntu-4ubuntu0.2.
 8. On the bank website, I did inspect element and found the phrase {h1dd3n_1n_plain_5ight}  in the HTML. I also found one using centralops.net and entering the url of her website; Under DNS records, there is a text  field saying "CMSC389R-{h0w_2_iNt0_DNS_r3c0Rd5}". After logging in and getting access to the shell, I changed to the home/files directory. After typing ls, I saw a ton of files, so I did cat AB4300.txt and found the flag CMSC389R-{YWX4H3d3Bz6dx9lG320dv0JZh}
 
 
