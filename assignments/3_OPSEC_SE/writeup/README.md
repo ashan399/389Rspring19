@@ -19,12 +19,16 @@ Digital acknowledgement: Ashan Panduwawala
   1337Bank’s web server had many vulnerabilities that led to exploitation by us hackers. One of them was the password. Aside from the fact that you used the same username across multiple websites, your password was weak and predictable. One of the easiest solutions to this is to create a complex password with a combination of numbers, uppercase letters, and lowercase letters. Additionally, use different usernames across different websites to make it harder for hackers to guess what it is. If you have trouble remembering every password or username, I would suggest using google chrome’s password manager. It remembers your usernames and passwords, while making it difficult to steal from an external source. 
 
   The second problem was that you had an open port that would accept anything that was sent to it. Port 1337 was a port in which hackers could send data and receive it back without any consequence. One solution is to close all open ports. Doing this would prevent hackers from abusing a port with malicious content. Another solution is to use a web application firewall. A WAF is a firewall for HTTP applications. It monitors data transfer between the server and device and protects against SQL injections and cross-site scripting (1). Another security tip is to switch the website to HTTPS. HTTPS guarantees that people are communicating with only the server they are using (2). This prevents hackers from intercepting or taking over important data by imitating another person. It would also be beneficial to invest in a strong DNS Firewall. A firewall protects users from connecting to known malicious Internet locations, gives insights on threats, and isolates infected devices (4). Another potential investment could be an IDS and an IPS. IDS stands for intrusion detection system and IPS is intrusion prevention system. Both monitor traffic and inspect packets for suspicious data however, an IDS  warns of attacks while an IPS blocks them (3).
+  
   The third problem was that having an open port allowed for unlimited password attempts. This is the main reason why hackers can get into the website in a short period of time. With unlimited attempts, the hacker can abuse the system and try millions of passwords without any resistance. One simple solution is to allow a certain amount of password attempts and if those attempts are used up, a timeout will occur where you will have to wait until you can enter it again. This method binds to the username and the timeouts will continuously increase with the number of attempts. Furthermore, if a certain number of passwords are incorrect, the website can block the username. There are numerous free softwares that test SQL injection, XSS, and many known vulnerabilities such as Netsparker, OpenVAS, and Nessus (2). Additionally it is wise to keep the website’s software updated. For example, if your webpage was using a really old version of some software, hackers will know most of the tricks and holes to it if it is still used.
 
 
 (1) www.owasp.org
+
 (2) https://www.creativebloq.com/web-design/website-security-tips-protect-your-site-7122853
+
 (3) https://www.pandasecurity.com/usa/support/card?id=31463
+
 (4) https://www.infoblox.com/glossary/dns-firewall/
 
 
