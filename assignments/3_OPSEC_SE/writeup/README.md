@@ -1,7 +1,7 @@
 # Writeup 3 - Operational Security and Social Engineering
 
-Name: *PUT YOUR NAME HERE*
-Section: *PUT YOUR SECTION NUMBER HERE*
+Name: Ashan Panduwawala
+Section: 0201
 
 I pledge on my honor that I have not given or received any unauthorized assistance on this assignment or examniation.
 
