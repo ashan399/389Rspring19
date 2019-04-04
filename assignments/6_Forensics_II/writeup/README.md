@@ -26,7 +26,7 @@ Digital acknowledgement: Ashan Panduwawala
 
     D. After following the tcp stream on one of the requests that had ‘(RETR find_me.jpeg)’, I saw the words “Apple iPhone 8 back camera.” To confirm this, I used exiftool and saw that the lens model said the same as above.
 
-E. Using exiftool, the photo was taken 4.5 meters below sea level.
+    E. Using exiftool, the photo was taken 4.5 meters below sea level.
 
 6. The hackers left a file called greetz.fpff on the server. I found this through wireshark after seeing a STOR greetz.fpff call from the source to the server. The destination was to the server as well, confirming that the file was going to the server.
 
