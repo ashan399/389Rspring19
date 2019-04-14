@@ -19,7 +19,6 @@ int main()
 {
 int x = 0xfeedface;
 int y = 0x1ceb00da;
-int temp;
 printf("%d\n" , x);
 printf("%d\n", y);
 x = x^y;
