@@ -1,17 +1,21 @@
 # Crypto II Writeup
 
-Name: *PUT YOUR NAME HERE*
-Section: *PUT YOUR SECTION NUMBER HERE*
+Name: Ashan Panduwawala
+Section: 0101
 
 I pledge on my honor that I have not given or received any unauthorized
 assistance on this assignment or examination.
 
-Digital acknowledgement: *PUT YOUR NAME HERE*
+Digital acknowledgement: Ashan Panduwawala
 
 ## Assignment Writeup
 
 ### Part 1 (70 Pts)
-
+The flag is CMSC389R-{m3ss@g3_!n+A_b0ttl3}. I found this by calling gpg --import b_secret.key and then calling gpg --decrypt message.txt.gpg. This gave me a set of instructions to complete along with the flag above.
 ### Part 2 (30 Pts)
+1. The ecb.bmp file looks substantially different from the original photo however, you can still see the shapes and outlines that were contained in the photo. You can see the oval and the rectancle in the encrypted image which implies that is isn't difficult to make out what the original image was. 
+On the other hand, the cbc.bmp file leaves you completely in the dark as to what the original photo was. There are no clues, outlines, or shapes that give us information on the original photo. Simply said, the photo just looks like a bunch of random pixels on a screen.
 
-*Your reflection goes here*
+2. ECB is less secure. The reason for this is that ECB is essentially a raw cipher. It takes a block, encrypts it, and returns it. However, the problem with this is that properties of the plaintext may show up in the ciphertext, Because it encrypts a block at a time and is independent of the other blocks, it usually creates patterns because you are only dealing with the part that you encrypted.
+
+CBC is more secure because each block is dependent on the block before it. Given an initialization vector, you XOR the first block of plaintext with it. Then you encrypt it. The next block however, is xor'd against the last encrypted block before encrypting the current block to almost elminiate any possible patterns.  
